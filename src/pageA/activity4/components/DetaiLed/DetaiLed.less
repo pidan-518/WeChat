@@ -1,0 +1,23 @@
+@import '../../../../common/global.less';
+page {
+  margin-bottom: 0 !important;
+}
+
+.detailed-item {
+  margin-top: 23px;
+
+  .detailed-main-img {
+    .setSize(100%, 331px);
+  }
+
+  .detailed-img-list {
+    position: relative;
+    bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+
+    Image {
+      .setSize(238px, 260px)
+    }
+  }
+}

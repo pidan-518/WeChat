@@ -1,0 +1,109 @@
+@import "../../../../common/global.less";
+
+.goods-comment-title {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  font-size: 32px;
+  color: #000000;
+  padding: 38px 34px;
+  font-weight: 700;
+
+  .title-left {
+    display: flex;
+    align-items: center;
+
+    .title-image {
+      .setSize(46px, 43px);
+    }
+
+    .title-text {
+      margin-left: 10px;
+    }
+  }
+
+  .more {
+    color: #8d8d93;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+
+    .more-image {
+      .setSize(20px, 32px);
+      margin-left: 18px;
+    }
+  }
+}
+
+.goods-comment {
+  margin-top: 2px;
+
+  .goods-comment-list {
+    .list-item {
+      padding: 20px 34px;
+      margin-bottom: 5px;
+      background-color: #fff;
+    }
+
+    .comment-rate {
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 28px;
+      color: #666666;
+
+      .comment-userinfo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .user-headPic {
+          .setSize(50px, 50px);
+          border-radius: 50%;
+        }
+
+        .nikeName {
+          font-size: 32px;
+          margin-left: 10px;
+        }
+      }
+
+      .comment-score {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+
+        .score-icon {
+          margin-left: 50px;
+          .setSize(40px, 40px);
+        }
+      }
+
+      .comment-date {
+        font-size: 24px;
+      }
+    }
+
+    .comment-content {
+      padding-top: 15px;
+      font-size: 28px;
+      text-align: justify;
+      color: #424242;
+      font-weight: 300;
+    }
+
+    .comment-img-list {
+      display: flex;
+      margin-top: 15px;
+
+      .comment-img {
+        .setSize(142px, 142px);
+        border-radius: 8px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

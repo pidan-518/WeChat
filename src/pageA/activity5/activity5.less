@@ -1,0 +1,171 @@
+@import '../../common/global.less';
+page {
+  margin-bottom: 0 !important;
+}
+#activity-page {
+  background-color: #9B0C0C;
+
+  .activity-banner {
+    height: 326px;
+  }
+
+  .swiper-wrap {
+    .setSize(100%, 100%);
+
+    Image {
+      .setSize(100%, 100%);
+    }
+  }
+
+  .activity-category {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 31px 25px 15px 25px;
+
+    .category-item {
+      flex: 1;
+      text-align: center;
+      margin: 0px 15px 15px 15px;
+
+      .item-img {
+        .setSize(96px, 96px);
+        border-radius: 50%;
+      }
+
+      .item-text {
+        color: #fff;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .hot-sale-wrap {
+    padding: 0px 30px 34px 30px;
+
+    .hot-sale-bg {
+      position: relative;
+      height: 295px;
+      padding: 0px 15px 17px 15px;
+      background-image: url('https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/activity6-hot-bg.png');
+      background-size: 100% 100%;
+
+      .hot-goods-list {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        .setSize(660px, 199px);
+        bottom: 17px;
+        background-color: #Fff;
+        border-radius: 10px;
+
+        .hot-swiper {
+          .setSize(100%, 199px);
+
+          .hot-swiper-item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            .item-goods {
+              width: 136px;
+
+              Image {
+                .setSize(136px, 136px);
+              }
+            }
+
+            .item-goods-name {
+              font-size: 21px;
+              color: #3B3A3A;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* .coupon-wrap {
+    position: relative;
+    top: 10px;
+    padding: 0px 30px;
+
+    .coupon-swiper {
+      height: 182px;
+      width: 100%;
+
+    }
+
+    .coupon-item {
+      display: block;
+      margin: 0 auto;
+      background-image: url('https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/coupon-bg.png');
+      background-size: 100% 100%;
+      padding-top: 10px;
+      .setSize(199px, 183px);
+
+      .item-price {
+        line-height: 1;
+        font-size: 24px;
+        text-align: center;
+        color: #bf0032;
+
+        .price-text {
+          font-size: 52px;
+        }
+      }
+
+      .use-text {
+        &:extend(#activity-page .coupon-wrap .coupon-item .item-price);
+      }
+    }
+  } */
+
+  .popularity-wrap {
+    position: relative;
+    z-index: 3;
+    background-image: url('https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/popularity-wrap-bg.png');
+    background-size: 100% 100%;
+    height: 1100px;
+    padding: 97px 0px 0px 0px;
+  }
+
+  .good-shop {
+    padding: 0px 13px 0px 13px;
+    position: relative;
+    z-index: 2;
+    bottom: 50px;
+
+    .good-shop-bg {
+      padding-top: 201px;
+      background-image: url('https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/good-shop-bg.png');
+      background-size: 100% 100%;
+      height: 1630px;
+    }
+  }
+
+  .guess-wrap {
+    .guess-bg {
+      .setSize(100%, 770px);
+    }
+    z-index: 1;
+    position: relative;
+    top: -100px;
+    // padding-top: 150px;
+    // background-image: url('https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/activity6-guess-bg.png');
+    // background-size: 100% 100%;
+
+    .guess-goods-box {
+      position: absolute;
+      top: 170px;
+      left: 0;
+      right: 0;
+      padding: 0 24px;
+      background-image: url('https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/activity6-guess-bg1.png');
+      background-repeat: repeat-y;
+      background-size: 100% 289px;
+    }
+  }
+
+}

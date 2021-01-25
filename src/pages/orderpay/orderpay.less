@@ -1,0 +1,412 @@
+@import '../../common/global.less';
+
+.orderPay {
+  font-size: 28px;
+
+  hr {
+    border-color: #ddd;
+  }
+
+  .ct-orderPay {
+    // width: 1173px;
+    margin: auto;
+
+    .item {
+      padding: 10px 0;
+    }
+
+    .baseInfo {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 10px 20px;
+
+      .remind {
+        // font-size: 24px;
+        font-weight: bold;
+        margin-left: 30px;
+      }
+
+      .payID {
+        font-size: 32px;
+        // margin-left: 15px;
+        color: @darkRedM;
+        // display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      .right {
+        font-size: 16px;
+        font-weight: bold;
+
+        .unit,
+        .amount-amount {
+          color: @darkRedM;
+          font-size: 24px;
+        }
+
+        .unit {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .storeList {
+      .proList {
+        margin-top: 39px;
+        width: 100%;
+
+        thead {
+          background-color: #ddd;
+          border-top: 2px solid @darkRedM;
+
+          tr {
+            height: 50px;
+          }
+        }
+
+        td,
+        th {
+          text-align: center;
+          width: 120px;
+        }
+
+        td {
+          height: 130px;
+        }
+
+        .production {
+          align-items: center;
+          justify-content: center;
+          width: 250px;
+
+          image {
+            width: 90px;
+            height: 90px;
+            border: 1px solid #ff5d8ccc;
+            border-radius: 5px;
+            position: relative;
+            top: 10px;
+          }
+
+          p {
+            display: inline-block;
+            width: 150px;
+            word-wrap: break-word;
+            text-align: left;
+            margin-top: 0;
+            margin-left: 20px;
+            color: black;
+          }
+
+          p:hover {
+            color: coral;
+          }
+        }
+
+        .platformPrice {
+          .currency {
+            display: block;
+          }
+
+          .priceOrigin {
+            font-size: 12px;
+            color: #666;
+            text-decoration: line-through;
+            margin-bottom: 5px;
+          }
+        }
+
+        .amount {
+          p {
+            color: #777;
+            margin-top: 5px;
+          }
+
+          .amount-amount {
+            font-size: 16px;
+          }
+        }
+
+        tbody {
+          .subTotal {
+            color: @darkRedM;
+          }
+        }
+      }
+    }
+
+    .payType {
+      // box-shadow: @shadowOne;
+      text-align: center;
+
+      // margin-top: 40px;
+      // padding: 20px 0;
+      .title {
+        font-size: 24px;
+        color: @darkRedM;
+        font-weight: bold;
+        margin-top: 5px;
+      }
+
+      .description {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      .type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .item {
+          // margin: 60px 50px;
+          display: flex;
+          align-items: center;
+
+          input {
+            zoom: 1.6;
+          }
+
+          image {
+            // box-shadow: @shadowOne;
+            padding: 20px 50px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-left: 30px;
+            height: 50px;
+            width: calc(28.3px * 50 / 22.67);
+          }
+        }
+
+        .wx_wrap {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding: 30px 20px;
+          background-color: #fff;
+
+          .left {
+            display: flex;
+            align-items: center;
+          }
+
+          // .wx {
+          //   padding: 23px 50px;
+          // }
+          image {
+            margin-right: 20px;
+            padding: 0;
+          }
+        }
+      }
+
+      .complete {
+        background-color: @darkRedM;
+        width: 300px;
+        height: 54px;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 20px 0 40px;
+      }
+    }
+
+    .coupon {
+      margin-top: 10px;
+      background-color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+
+      .type {
+        line-height: 45px;
+
+        .type-text {
+          color: #d5205e;
+        }
+
+        .coupon-num {
+          color: #d5205e;
+        }
+      }
+    }
+
+    .action {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      // box-shadow: @shadowOne;
+      padding-bottom: 30px;
+      width: 100%;
+
+      .left {
+        margin-left: 30px;
+        margin-top: 30px;
+        overflow: hidden;
+
+        textarea {
+          padding: 15px 20px;
+          border-color: #ddd;
+          margin-top: 10px;
+          border-width: 2px;
+          color: #888;
+          background-color: #f6f6f6;
+        }
+
+        textarea::-webkit-input-placeholder {
+          color: #aaa;
+        }
+      }
+
+      .right {
+        background-color: #fff;
+        width: 100%;
+        padding: 20px 40px;
+
+        .info {
+          color: #666;
+          margin-right: 20px;
+          text-align: right;
+
+          .line {
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+          }
+
+          span {
+            display: inline-block;
+            width: 100px;
+          }
+
+          .value {
+            font-size: 30px;
+          }
+
+          .total {
+            .value {
+              color: @darkRedM;
+              letter-spacing: 2px;
+              font-weight: bold;
+              // font-size: 18px;
+              width: fit-content;
+              min-width: 100px;
+            }
+          }
+
+          .freightCharges {
+            .value {
+              color: black;
+              // font-size: 18px;
+            }
+          }
+
+          .taxFee {
+            .value {
+              color: black;
+              // font-size: 18px;
+            }
+          }
+        }
+
+        .amount {
+          // margin: 70px 20px 0 auto;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 40px 20px 10px 20px;
+          font-weight: bold;
+
+          .prop {
+            // font-size: 16px;
+            margin-right: 10px;
+          }
+
+          .unit,
+          .amount-amount {
+            font-size: 34px;
+            color: @darkRedM;
+            font-weight: bold;
+          }
+
+          .unit {
+            margin-right: 5px;
+          }
+        }
+
+        .remind {
+          color: @darkRedM;
+          margin: 30px 5px 0 auto;
+          width: fit-content;
+
+          image {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+    .promoCode {
+      height: 120px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+
+      .content {
+        width: 100vw;
+        padding: 0 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .content {
+          .text {
+            font-size: 30px;
+          }
+
+          .promoode {
+            background-color: #F5F5F5;
+            margin-left: 20px;
+            width: 70%;
+            margin-left: 15px;
+            height: 84px;
+            font-size: 28px;
+            border: none;
+            text-align: center;
+            z-index: 0;
+          }
+        }
+      }
+    }
+
+    .action-action {
+      // text-align: right;
+      // padding-right: 20px;
+      margin-top: 70px;
+
+      button {
+        background-color: #fff;
+        font-size: 30px;
+        border: 2px solid @darkRedM;
+        width: 198px;
+        height: 85px;
+        // margin-left: 60px;
+        color: @darkRedM;
+        font-weight: bold;
+        width: 80%;
+        display: block;
+        border-radius: 50px;
+      }
+
+      .complete {
+        background-color: @darkRedM;
+        color: white;
+        padding-top: 20px;
+      }
+    }
+  }
+}

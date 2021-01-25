@@ -1,0 +1,173 @@
+@import "../../../../common/global.less";
+
+view,
+Text {
+  box-sizing: border-box;
+}
+
+.navigator-hover {
+  background-color: unset;
+}
+
+.wrap {
+  margin: 20px 0px;
+  padding: 0px 0px 0px 12px;
+  background-color: #fff;
+  border-radius: 20px;
+
+  .title-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/home/lovingshpping/lovingshopping-bg.png);
+    background-size: 100% 100%;
+    padding-left: 240px;
+    height: 74px;
+
+    .box-left {
+      display: flex;
+      align-items: center;
+      color: #000;
+
+      .title-text {
+        background-image: url(https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/home/lovingshpping/lovingshopping-title-bg.png);
+        background-size: 100% 100%;
+        font-size: 44px;
+        font-weight: 700;
+        position: absolute;
+        left: 0;
+        right: 0;
+        line-height: 74px;
+        /* padding-left: 30px; */
+
+        text {
+          display: inline-block;
+          width: 210px;
+          text-align: center;
+        }
+      }
+
+      .time {
+        padding: 6px 8px 6px 16px;
+        display: flex;
+        align-items: center;
+        height: 74px;
+
+        .spot-field-text {
+          background-image: url(https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/home/lovingshpping/nextsession-bg.png);
+          background-size: 100% 100%;
+          width: 152px;
+          line-height: 52px;
+          text-align: center;
+          line-height: 52px;
+          color: #4f4f4f;
+          font-size: 28px;
+          font-weight: 600;
+        }
+
+        .time-text {
+          width: 70px;
+          line-height: 52px;
+          background-image: url(https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/home/lovingshpping/timer-bg.png);
+          background-size: 100% 100%;
+          color: #ea333b;
+          margin-left: 6px;
+          text-align: center;
+          color: #4f4f4f;
+          font-size: 28px;
+        }
+      }
+
+      .underway {
+        background-image: url(https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/home/lovingshpping/nextsession-bg.png);
+        background-size: 100% 100%;
+        width: 152px;
+        line-height: 52px;
+        text-align: center;
+        height: 52px;
+        &:extend(.wrap .title-box .box-left .time);
+        display: unset;
+        /* color: #fff; */
+        padding: 0px;
+      }
+    }
+
+    /* .box-right {
+      background: #000;
+      color: #fff;
+      padding: 0px 22px 0px 30px;
+      height: 48px;
+      line-height: 1;
+      border-radius: 50px 0px 0px 50px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+
+      .return-icon {
+        .setSize(15px, 22px);
+      }
+    } */
+  }
+
+  .loving-shopping-list {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 24px 0px;
+
+    .list-scroll {
+      .list-item {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+        .setSize(274px, 368px);
+        background-size: 100% 100%;
+        border-radius: 12px;
+
+        .goods-info {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(255, 255, 255, 0.8);
+          padding: 10px 0px 12px 0px;
+
+          .goods-name {
+            color: #4f4f4f;
+            padding: 0px 22px;
+            font-size: 24px;
+            height: 64px;
+            white-space: pre-wrap;
+            text-align: left;
+          }
+
+          .goods-price {
+            display: flex;
+            align-items: center;
+            margin-top: 4px;
+
+            .price-tag {
+              background-color: #ff5d8c;
+              color: #fff;
+              line-height: 34px;
+              font-size: 24px;
+              border-radius: 0px 20px 20px 0px;
+              padding: 4px 10px 4px 16px;
+            }
+
+            .price-box {
+              font-weight: 700;
+              margin-left: 15px;
+
+              .price-text {
+                font-size: 36px;
+
+                line-height: 48px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

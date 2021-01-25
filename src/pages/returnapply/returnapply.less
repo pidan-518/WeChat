@@ -1,0 +1,122 @@
+@import "../../common/global.less";
+
+.returnApply {
+  .top {
+    width: 750px;
+    background-color: @paleRed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 80px;
+    .left {
+      color: white;
+      text-decoration: underline;
+      font-size: 32px;
+      letter-spacing: 7px;
+      display: flex;
+      align-items: center;
+      image {
+        margin-right: 20px;
+      }
+    }
+    .right {
+      width: 200px;
+      height: calc(83px * 200 / 95);
+      margin-left: 130px;
+    }
+  }
+
+  .form {
+    .formItem {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 50px;
+      background-color: #fff;
+      margin: 20px 0;
+      .right {
+        color: @fontColor666;
+        display: flex;
+        align-items: center;
+        .arrow {
+          height: 20px;
+          width: 15px;
+          margin-left: 30px;
+        }
+      }
+    }
+
+    .description {
+      display: block;
+      .title {
+        margin-bottom: 20px;
+        display: block;
+      }
+      .right {
+        width: 100%;
+        display: block;
+        min-height: 120px;
+        border-color: #bbb;
+        padding: 20px;
+        border-radius: 10px;
+      }
+    }
+
+    .image {
+      display: block;
+      .item_wrap {
+        margin: 30px 50px 0 0;
+        width: fit-content;
+        display: inline-block;
+        .itemFile {
+          width: 120px;
+          height: 120px;
+        }
+        .delete {
+          color: @darkRedM;
+          margin: 10px 0;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .addImg_wrap {
+        display: flex;
+        align-items: center;
+        .addImg {
+          width:fit-content;
+          color: white;
+          background-color: @darkRedM;
+          padding: 5px 20px;
+          font-weight: bold;
+          border-radius: 10px;
+          display: inline-block;
+          margin: 20px 20px 20px 0;
+        }
+        .upload_desc {
+          color: #666;
+          font-size: 24px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .complete {
+      color: white;
+      background-color: @darkRedM;
+      padding: 20px;
+      border-radius: 20px;
+      margin: 40px;
+      font-weight: bold;
+      font-size: 32px;
+    }
+  }
+
+  .guessLikeWrap {
+    width: 1183px;
+    margin: 65px auto;
+    .guessLike {
+      width: 1173px;
+      margin: 0 0 0 auto;
+    }
+  }
+}

@@ -1,0 +1,225 @@
+@import '../../../common/global.less';
+
+.brandlist {
+  font-size: 28px;
+  background: #f4f4f4;
+  padding: 0px 0;
+  min-height: 100vh;
+  .no-more {
+    color: #666666;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    font-size: 24px;
+  }
+  .bg {
+    width: 706px;
+    height: 300px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto 8px;
+    text-align: center;
+  }
+  .select {
+    display: flex;
+    align-items: center;
+    height: 88px;
+    border-bottom: 1.1px solid #efebeb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #f4f4f4;
+    .item {
+      width: 33.3%;
+      text-align: center;
+      border-right: 1.1px solid #dcdcdc;
+      line-height: 1.1;
+      color: #98989e;
+      &.no-border {
+        border-right: none !important;
+      }
+      &.on {
+        color: #000000;
+      }
+      .ic {
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+        margin-left: 6px;
+      }
+    }
+    .item-select {
+      position: absolute;
+      top: 88px;
+      left: 0;
+      width: 100vw;
+      background: #ffffff;
+      padding-left: 60px;
+      box-sizing: border-box;
+      .text {
+        line-height: 80px;
+      }
+    }
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 18px;
+  }
+  .goodItem {
+    margin: 26px 0 0;
+    width: 348px;
+    height: 542px;
+    background: #ffffff;
+    opacity: 1;
+    border-radius: 16px;
+    // margin: 26px auto 0;
+    position: relative;
+    .bao {
+      width: 52px;
+      height: 61px;
+      position: absolute;
+      right: 20px;
+      top: 0;
+      z-index: 9;
+      color: #ffffff;
+      font-size: 22px;
+      text-align: center;
+      line-height: 60px;
+      .text {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 52px;
+      }
+    }
+    .bg-bao {
+      width: 52px;
+      height: 61px;
+    }
+    .pic {
+      width: 348px;
+      height: 362px;
+      border-radius: 16px 16px 0px 0px;
+    }
+    .name {
+      margin: 0 18px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      /*! autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+      width: 90%;
+      overflow: hidden;
+      height: 80px;
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      padding: 0 18px;
+      font-size: 40px;
+      .old {
+        color: #8d8d93;
+        font-size: 22px;
+        text-decoration: line-through;
+        font-weight: 400;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+    }
+    .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      margin-left: auto;
+    }
+  }
+  .model {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    .dailog {
+      width: 650px;
+      height: 800px;
+      background: #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      padding: 20px 30px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      .close {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+      .title {
+        font-size: 38px;
+        font-weight: bold;
+        margin: 50px 0 30px;
+      }
+      .select-item {
+        display: flex;
+        justify-content: space-between;
+        .item {
+          width: 30%;
+          line-height: 62px;
+          border: 1.1px solid #888888;
+          border-radius: 42px;
+          text-align: center;
+          &.on {
+            color: RGBA(255, 93, 131, 1);
+            border: 1.1px solid RGBA(255, 93, 131, 1);
+          }
+        }
+      }
+      .price-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .inp {
+          width: 40%;
+          height: 62px;
+          background: rgba(150, 150, 150, 0.3);
+          border-radius: 62px;
+          text-align: center;
+        }
+        .zhi {
+          font-size: 50px;
+          color: #98989e;
+        }
+      }
+      .btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 200px;
+        .reset,
+        .sub {
+          width: 45%;
+          line-height: 72px;
+          border-radius: 62px;
+          text-align: center;
+        }
+        .reset {
+          color: RGBA(255, 93, 131, 1);
+          border: 1.1px solid RGBA(255, 93, 131, 1);
+        }
+        .sub {
+          background: RGBA(255, 93, 131, 1);
+          border: 1.1px solid RGBA(255, 93, 131, 1);
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

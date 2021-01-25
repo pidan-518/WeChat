@@ -1,0 +1,87 @@
+.ant-spin-dot-item {
+  background-color: #ff5d8c;
+}
+.ant-spin {
+  color: #ff5d8c;
+}
+#ProReturn #ct-wrap {
+  width: 1183px;
+  margin: auto;
+}
+#ProReturn #ct-wrap #ct-returnOrder {
+  width: 1014px;
+  margin: 30px 0 20px auto;
+}
+#ProReturn #ct-wrap #ct-returnOrder table {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  width: 100%;
+  margin-top: 30px;
+}
+#ProReturn #ct-wrap #ct-returnOrder table thead {
+  font-size: 16px;
+  color: #666;
+  border-top: 2px solid #ff5d8c;
+}
+#ProReturn #ct-wrap #ct-returnOrder table thead tr {
+  background-color: #ddd;
+}
+#ProReturn #ct-wrap #ct-returnOrder table thead tr th {
+  padding: 10px 0;
+  text-align: center;
+}
+#ProReturn #ct-wrap #ct-returnOrder table .orderID {
+  color: #666;
+  border-bottom: 1px solid #eee;
+}
+#ProReturn #ct-wrap #ct-returnOrder table .orderID .prop {
+  font-weight: bold;
+  margin: 10px 15px 10px 30px;
+  display: inline-block;
+}
+#ProReturn #ct-wrap #ct-returnOrder table .orderInfo {
+  border-bottom: 2px solid #ccc;
+  color: #666;
+}
+#ProReturn #ct-wrap #ct-returnOrder table .orderInfo td {
+  padding: 20px 0;
+  min-width: 140px;
+  text-align: center;
+}
+#ProReturn #ct-wrap #ct-returnOrder table .orderInfo .proInfo {
+  display: flex;
+  align-items: center;
+  margin-left: 23px;
+}
+#ProReturn #ct-wrap #ct-returnOrder table .orderInfo .proInfo p {
+  width: 210px;
+  text-align: left;
+  margin-left: 10px;
+}
+#ProReturn #ct-wrap #ct-returnOrder table .orderInfo .contactBusi {
+  color: #ff5d8c;
+}
+#ProReturn #ct-wrap #ct-returnOrder table .orderInfo .orderTime {
+  width: 250px;
+}
+#ProReturn #ct-wrap #ct-returnOrder table tfoot td {
+  text-align: right;
+  padding: 40px;
+}
+#ProReturn #ct-wrap #ct-returnOrder table tfoot td button {
+  border: 1px solid #000;
+  width: 39px;
+  height: 35px;
+  margin-right: -1px;
+}
+#ProReturn #ct-wrap #ct-returnOrder table tfoot td #proPage {
+  border-radius: 5px 0 0 5px;
+}
+#ProReturn #ct-wrap #ct-returnOrder table tfoot td .num {
+  display: inline-block;
+}
+#ProReturn #ct-wrap #ct-returnOrder table tfoot td #nextPage {
+  border-radius: 0 5px 5px 0;
+}
+#ProReturn #ct-wrap #ct-returnOrder table tfoot td .selected {
+  color: #ff5d8c;
+}

@@ -1,0 +1,38 @@
+@import '../../../../common/global.less';
+
+view,
+Text {
+  box-sizing: border-box;
+}
+
+.navigator-hover {
+  background-color: unset;
+}
+
+.goods-category {
+  padding: 22px 0px;
+  background-size: 100% 100%;
+  background-color: #fff;
+  border-radius: 26px;
+  margin: 20px auto 0px auto;
+
+  .category-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .category-item {
+    flex: 1;
+    margin: 0px 15px 15px 15px;
+    text-align: center;
+
+    image {
+      .setSize(104px, 104px);
+      border-radius: 50%;
+    }
+
+    .item-txt {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,310 @@
+.orderPay {
+  font-size: 28px;
+}
+.orderPay hr {
+  border-color: #ddd;
+}
+.orderPay .ct-orderPay {
+  margin: auto;
+}
+.orderPay .ct-orderPay .item {
+  padding: 10px 0;
+}
+.orderPay .ct-orderPay .baseInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+.orderPay .ct-orderPay .baseInfo .remind {
+  font-weight: bold;
+  margin-left: 30px;
+}
+.orderPay .ct-orderPay .baseInfo .payID {
+  font-size: 32px;
+  color: #d5205e;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.orderPay .ct-orderPay .baseInfo .right {
+  font-size: 16px;
+  font-weight: bold;
+}
+.orderPay .ct-orderPay .baseInfo .right .unit,
+.orderPay .ct-orderPay .baseInfo .right .amount-amount {
+  color: #d5205e;
+  font-size: 24px;
+}
+.orderPay .ct-orderPay .baseInfo .right .unit {
+  margin-left: 10px;
+}
+.orderPay .ct-orderPay .storeList .proList {
+  margin-top: 39px;
+  width: 100%;
+}
+.orderPay .ct-orderPay .storeList .proList thead {
+  background-color: #ddd;
+  border-top: 2px solid #d5205e;
+}
+.orderPay .ct-orderPay .storeList .proList thead tr {
+  height: 50px;
+}
+.orderPay .ct-orderPay .storeList .proList td,
+.orderPay .ct-orderPay .storeList .proList th {
+  text-align: center;
+  width: 120px;
+}
+.orderPay .ct-orderPay .storeList .proList td {
+  height: 130px;
+}
+.orderPay .ct-orderPay .storeList .proList .production {
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
+.orderPay .ct-orderPay .storeList .proList .production image {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #ff5d8ccc;
+  border-radius: 5px;
+  position: relative;
+  top: 10px;
+}
+.orderPay .ct-orderPay .storeList .proList .production p {
+  display: inline-block;
+  width: 150px;
+  word-wrap: break-word;
+  text-align: left;
+  margin-top: 0;
+  margin-left: 20px;
+  color: black;
+}
+.orderPay .ct-orderPay .storeList .proList .production p:hover {
+  color: coral;
+}
+.orderPay .ct-orderPay .storeList .proList .platformPrice .currency {
+  display: block;
+}
+.orderPay .ct-orderPay .storeList .proList .platformPrice .priceOrigin {
+  font-size: 12px;
+  color: #666;
+  text-decoration: line-through;
+  margin-bottom: 5px;
+}
+.orderPay .ct-orderPay .storeList .proList .amount p {
+  color: #777;
+  margin-top: 5px;
+}
+.orderPay .ct-orderPay .storeList .proList .amount .amount-amount {
+  font-size: 16px;
+}
+.orderPay .ct-orderPay .storeList .proList tbody .subTotal {
+  color: #d5205e;
+}
+.orderPay .ct-orderPay .payType {
+  text-align: center;
+}
+.orderPay .ct-orderPay .payType .title {
+  font-size: 24px;
+  color: #d5205e;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.orderPay .ct-orderPay .payType .description {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.orderPay .ct-orderPay .payType .type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orderPay .ct-orderPay .payType .type .item {
+  display: flex;
+  align-items: center;
+}
+.orderPay .ct-orderPay .payType .type .item input {
+  zoom: 1.6;
+}
+.orderPay .ct-orderPay .payType .type .item image {
+  padding: 20px 50px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 30px;
+  height: 50px;
+  width: calc(28.3px * 50 / 22.67);
+}
+.orderPay .ct-orderPay .payType .type .wx_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #fff;
+}
+.orderPay .ct-orderPay .payType .type .wx_wrap .left {
+  display: flex;
+  align-items: center;
+}
+.orderPay .ct-orderPay .payType .type .wx_wrap image {
+  margin-right: 20px;
+  padding: 0;
+}
+.orderPay .ct-orderPay .payType .complete {
+  background-color: #d5205e;
+  width: 300px;
+  height: 54px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 40px;
+}
+.orderPay .ct-orderPay .coupon {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.orderPay .ct-orderPay .coupon .type {
+  line-height: 45px;
+}
+.orderPay .ct-orderPay .coupon .type .type-text {
+  color: #d5205e;
+}
+.orderPay .ct-orderPay .coupon .type .coupon-num {
+  color: #d5205e;
+}
+.orderPay .ct-orderPay .action {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.orderPay .ct-orderPay .action .left {
+  margin-left: 30px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.orderPay .ct-orderPay .action .left textarea {
+  padding: 15px 20px;
+  border-color: #ddd;
+  margin-top: 10px;
+  border-width: 2px;
+  color: #888;
+  background-color: #f6f6f6;
+}
+.orderPay .ct-orderPay .action .left textarea::-webkit-input-placeholder {
+  color: #aaa;
+}
+.orderPay .ct-orderPay .action .right {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 40px;
+}
+.orderPay .ct-orderPay .action .right .info {
+  color: #666;
+  margin-right: 20px;
+  text-align: right;
+}
+.orderPay .ct-orderPay .action .right .info .line {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.orderPay .ct-orderPay .action .right .info span {
+  display: inline-block;
+  width: 100px;
+}
+.orderPay .ct-orderPay .action .right .info .value {
+  font-size: 30px;
+}
+.orderPay .ct-orderPay .action .right .info .total .value {
+  color: #d5205e;
+  letter-spacing: 2px;
+  font-weight: bold;
+  width: fit-content;
+  min-width: 100px;
+}
+.orderPay .ct-orderPay .action .right .info .freightCharges .value {
+  color: black;
+}
+.orderPay .ct-orderPay .action .right .info .taxFee .value {
+  color: black;
+}
+.orderPay .ct-orderPay .action .right .amount {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px 10px 20px;
+  font-weight: bold;
+}
+.orderPay .ct-orderPay .action .right .amount .prop {
+  margin-right: 10px;
+}
+.orderPay .ct-orderPay .action .right .amount .unit,
+.orderPay .ct-orderPay .action .right .amount .amount-amount {
+  font-size: 34px;
+  color: #d5205e;
+  font-weight: bold;
+}
+.orderPay .ct-orderPay .action .right .amount .unit {
+  margin-right: 5px;
+}
+.orderPay .ct-orderPay .action .right .remind {
+  color: #d5205e;
+  margin: 30px 5px 0 auto;
+  width: fit-content;
+}
+.orderPay .ct-orderPay .action .right .remind image {
+  margin-right: 15px;
+}
+.orderPay .ct-orderPay .promoCode {
+  height: 120px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.orderPay .ct-orderPay .promoCode .content {
+  width: 100vw;
+  padding: 0 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.orderPay .ct-orderPay .promoCode .content .content .text {
+  font-size: 30px;
+}
+.orderPay .ct-orderPay .promoCode .content .content .promoode {
+  background-color: #F5F5F5;
+  margin-left: 20px;
+  width: 70%;
+  margin-left: 15px;
+  height: 84px;
+  font-size: 28px;
+  border: none;
+  text-align: center;
+  z-index: 0;
+}
+.orderPay .ct-orderPay .action-action {
+  margin-top: 70px;
+}
+.orderPay .ct-orderPay .action-action button {
+  background-color: #fff;
+  font-size: 30px;
+  border: 2px solid #d5205e;
+  width: 198px;
+  height: 85px;
+  color: #d5205e;
+  font-weight: bold;
+  width: 80%;
+  display: block;
+  border-radius: 50px;
+}
+.orderPay .ct-orderPay .action-action .complete {
+  background-color: #d5205e;
+  color: white;
+  padding-top: 20px;
+}

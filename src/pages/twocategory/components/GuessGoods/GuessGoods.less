@@ -1,0 +1,94 @@
+@import '../../../../common/global.less';
+
+.parity-goods {
+  margin-top: 20px;
+
+  .parity-goods-title {
+    background-size: 100% 100%;
+    padding: 0px 58px;
+    line-height: 104px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .parity-goods-list {
+    padding: 48px 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .goods-item {
+      border-radius: 16px;
+      background-color: #fff;
+      position: relative;
+      padding-bottom: 34px;
+      margin-bottom: 12px;
+
+      .goods-status {
+        position: absolute;
+        top: 0px;
+        right: 18px;
+        .setSize(55px, 61px);
+
+        .status-img {
+          .setSize(100%, 100%);
+        }
+      }
+
+      .goods-img-wrap {
+        .setSize(348px, 362px);
+
+        .goods-img {
+          border-radius: 16px 16px 0px 0px;
+          .setSize(100%, 100%);
+        }
+      }
+
+      .goods-name {
+        margin: 0 auto;
+        text-align: left;
+        width: 312px;
+        font-size: 30px;
+        height: 80px;
+      }
+
+      .goods-price {
+        padding: 0px 14px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .price-box {
+          display: flex;
+          align-items: flex-end;
+          line-height: 1;
+
+          .origin-price {
+            line-height: 1;
+
+            .price-text {
+              font-size: 44px;
+            }
+          }
+
+          .discount-price {
+            line-height: 1.3;
+            color: #8d8d93;
+            text-decoration: line-through;
+            font-size: 24px;
+            margin-left: 12px;
+          }
+        }
+
+        .sign-img-wrap {
+          .setSize(36px, 36px);
+
+          .sign-img {
+            .setSize(100%, 100%);
+          }
+        }
+      }
+    }
+  }
+}

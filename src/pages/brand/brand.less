@@ -1,0 +1,196 @@
+@import "../../common/global.less";
+.brand{
+  font-size: 28px;
+  // padding-top: 70px;
+  background: #f5f6f7;
+  // height: 100vh;
+  // overflow-y: auto;
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: #562FC3;
+  .more{
+    font-size: 25px;
+    color: #666666;
+    text-align: center;
+    padding: 30px 0 80px 0;
+    background: #f5f6f7;
+  }
+  .topTab{
+    width: 100vw;
+    background: #562FC3;
+    display: flex;
+    line-height: 98px;
+    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    .scrollView{
+      width: calc(100vw - 120px);
+      height: 98px;
+      // display: flex;
+      white-space: nowrap;
+      overflow-x: auto;
+      padding-left: 10px;
+      position: relative;
+      z-index: 3;
+      background: #562FC3;
+      .item{
+        display: inline-block;
+        // margin:0 40px;
+        padding: 0 18px;
+        color: #ffffff;
+        text-align: center;
+        position: relative;
+        &.on::after{
+          content:' ';
+          width: 100px;
+          height: 4px;
+          background: #ffffff;
+          border-radius: 4px;
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .no{
+          // margin-left: -200px;
+          position: absolute;
+          left: -160px;
+        }
+      }
+    }
+    .list{
+      width: 120px;
+      color: #ffffff;
+      padding-left: 40px;
+      box-sizing: border-box;
+      background:#562FC3 url('../../static/brand/ic_list.png') left no-repeat;
+      background-size: 32%;
+      position: relative;
+      z-index: 3;
+      // background: ;
+    }
+    .posi{
+      position: absolute;
+      right: 0;
+      top: 98px;
+      width: 100vw;
+      min-height: 200px;
+      background: #ffffff;
+      display: flex;
+      flex-wrap: wrap;
+      overflow-y: auto;
+      transform: translateY(-300px);
+      opacity: 0;
+      transition: all .4s;
+      z-index: 2;
+      border-radius: 0 0 20px 20px;
+      // padding-left: 30px;
+      box-sizing: border-box;
+      &.on{
+        // top: 98px;
+        transform: translateY(0);
+        opacity: 1;
+      }
+      .item{
+        min-width: 25%;
+        text-align: center;
+        color: #666666;
+        // padding: 0 20px;
+        // box-sizing: border-box;
+        &.on{
+          color: #562FC3;
+        }
+      }
+    }
+    .model{
+      width: 100vw;
+      height: calc(100vh - 98px);
+      background: rgba(0, 0, 0, .2);
+      position: absolute;
+      top: 98px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+  
+  .bottom{
+    // .scrollView2{
+      position: relative;
+      z-index: 0;
+      // height: calc(100vh - 98px);
+      // overflow-y: auto;
+      padding-bottom: 20px;
+      background: #f5f6f7;
+      .rio{
+        height: 220px;
+        width: 100vw;    
+        background: #562FC3;
+        border-radius: 0px 0px 80px 80px;
+        position: absolute;
+        padding-top: 70px;
+      }
+      .blue{
+        background: #562FC3;
+        height: 220px;
+        width: 100vw;
+        border-radius: 0px 0px 180px 180px;
+        
+      }
+      .brandList{
+        width: 706px;
+        height: 552px;
+        margin: 110px auto 40px;
+        & +.brandList{
+          margin-top: 40px;
+        }
+        .bg{
+          width: 706px;
+          height: 300px;
+          position: relative;
+          z-index: 1;
+          border-radius: 10px;
+        }
+        .itemList{
+          width: 706px;
+          height: 294px;
+          margin-top: -42px;
+          border-radius: 10px;
+          background: #ffffff;
+          display: flex;
+          align-items: center;
+          padding-top: 18px;
+          box-sizing: border-box;
+          position: relative;
+          z-index: 2;
+          .good{
+            width: 216px;
+            margin-left: 14px;
+            .pic{
+              width: 216px;
+              height: 216px;
+              border-radius: 8px;
+            }
+            .price{
+              color: #000000;
+              font-size: 24px;
+              font-weight: bold;
+              text-align: center;
+              max-width: 100%;
+              width: 216px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              .old{
+                color: #8D8D93;
+                font-size: 20px;
+                text-decoration: line-through;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    // }
+  }
+}

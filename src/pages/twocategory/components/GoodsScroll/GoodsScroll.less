@@ -1,0 +1,65 @@
+@import '../../../../common/global.less';
+
+.goods-swiper-wrap {
+  margin-top: 32px;
+  padding: 0px 22px;
+
+  .goods-swiper-box {
+    border-radius: 12px;
+
+    .goods-title {
+      background-size: 100% 100%;
+      padding: 0px 36px;
+      line-height: 104px;
+      color: #000000;
+      font-size: 32px;
+      font-weight: 700;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .goods-list {
+      // padding: 22px 14px;
+      background-color: #fff;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      overflow: hidden;
+      white-space: nowrap;
+
+      .goods-scrollView {
+        padding: 22px 14px;
+      }
+
+      .item-goods {
+        display: inline-block;
+        margin-right: 14px;
+
+        .goods-img-wrap {
+          text-align: center;
+
+          .goods-img {
+            .setSize(236px, 224px);
+          }
+        }
+
+        .goods-name {
+          margin: 0 auto;
+          white-space: pre-wrap;
+          text-align: center;
+          width: 236px;
+          height: 64px;
+          font-size: 24px;
+        }
+
+        .goods-price {
+          text-align: center;
+          font-weight: 700;
+
+          .price-text {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+}

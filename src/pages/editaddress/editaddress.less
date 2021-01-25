@@ -1,0 +1,76 @@
+@import '../../common/global.less';
+page {
+  background-color: #fff;
+}
+#editAddress {
+  .form-item {
+    height: 104px;
+    display: flex;
+    align-items: center;
+    padding: 34px;
+    border-top: 1px solid #f5f5f5;
+
+    .form-item-label {
+      color: #666666;
+      width: 130px;
+    }
+
+    .form-item-value {
+      border: none;
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    Picker {
+      flex: 1;
+
+      .region-value {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .form-item-textarea {
+    height: 192px;
+    border-top: 1px solid #f5f5f5;
+
+    textarea {
+      .setSize(100%, 192px);
+      border: none;
+      padding: 34px;
+      margin: 0;
+    }
+  }
+
+  .form-switch {
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px;
+    border-top: 1px solid #f5f5f5;
+  }
+
+  .form-submit-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+
+    button {
+      flex: 1;
+      line-height: 110px;
+      font-size: 30px;
+      color: #fff;
+      border-radius: 0;
+      background-color: #ff5d8c;
+    }
+
+    .remove {
+      // margin-right: 30px;
+      background-color: #ccc;
+      color: #000;
+    }
+  }
+}

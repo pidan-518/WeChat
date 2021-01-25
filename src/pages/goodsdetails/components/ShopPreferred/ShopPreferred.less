@@ -1,0 +1,56 @@
+@import "../../../../common/global.less";
+
+.shop-preferred {
+  margin-top: 20px;
+  padding: 30px 22px 36px;
+  background-color: #fff;
+
+  .shop-preferred-title {
+    background-image: url("https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/goodsdetails/shop-preferred-title.png");
+    background-size: 100% 100%;
+    .setSize(182px, 44px);
+  }
+
+  .preferred-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* overflow: hidden;
+    border-radius: 12px; */
+
+    .goods-item {
+      margin-bottom: 20px;
+      text-align: center;
+      width: 226px;
+
+      .goods-img {
+        .setSize(226px, 232px);
+        border-radius: 12px;
+      }
+
+      .goods-name {
+        width: 206px;
+        display: -webkit-box !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        work-break: break-all;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-align: center;
+        color: #4f4f4f;
+        height: 64px;
+        font-size: 24px;
+      }
+
+      .goods-price {
+        text-align: center;
+        font-weight: 700;
+
+        .goods-price-text {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

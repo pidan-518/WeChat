@@ -1,0 +1,173 @@
+@import "../../common/global.less";
+
+.returnProcessing {  
+  .top {
+    width: 750px;
+    background-color: @paleRed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 80px;
+    .left {
+      color: white;
+      text-decoration: underline;
+      font-size: 32px;
+      letter-spacing: 7px;
+      display: flex;
+      align-items: center;
+      image {
+        margin-right: 20px;
+      }
+    }
+    .right {
+      width: 200px;
+      height: calc(83px * 200 / 95);
+      margin-left: 130px;
+    }
+  }
+
+  .status {
+    color: green;
+    padding: 30px 50px;
+    display: block;
+    background-color: #fff;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+
+  .ct-wrap {
+    display: flex;
+    .ct-returnApply {
+      margin: 2px 0 20px auto;
+      .applyWrap {
+        box-shadow: @shadowOne;
+        border-radius: 6px;
+        overflow: hidden;
+        // margin-top: 30px;
+        .returnApplyStage {
+          margin: 50px auto;
+        }
+        .actionAInfo {
+          display: flex;
+          justify-content: space-between;
+          padding: 30px 40px;
+          color: @fontColor666;
+          .left {
+            width: 600px;
+            position: relative;
+            .line {
+              margin-bottom: 40px;
+            }
+            .star {
+              position: absolute;
+            }
+            .ant-form-item-label {
+              margin-right: 10px;
+            }
+            .ant-upload-list-picture-card-container {
+              width: 118px;
+              height: 118px;
+              .ant-upload-list-item-list-type-picture-card {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .ant-upload {
+              position: relative;
+              .remind {
+                font-size: 12px;
+                padding: 0;
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+                right: 0;
+                color: #888;
+              }
+            }
+          }
+          .right {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 263px;
+            .title {
+              color: @paleRed;
+              font-size: 16px;
+              text-align: center;
+              padding: 10px 0;
+              border-bottom: 1px solid #ccc;
+            }
+            img {
+              display: block;
+              margin: 10px auto 10px;
+              width: 100px;
+              height: 100px;
+              border: 1px solid @paleRed;
+              border-radius: 5px;
+            }
+            .info {
+              padding: 0 20px;
+              .prop {
+                width: 80px;
+                display: inline-block;
+                margin-top: 3px;
+                font-weight: bold;
+                color: #333;
+                word-break: break-all;
+              }
+              .value {
+                word-wrap: break-word;
+                overflow: hidden;
+              }
+            }
+            .check {
+              color: white;
+              background-color: @paleRed;
+              width: 150px;
+              height: 35px;
+              display: block;
+              font-size: 16px;
+              font-weight: bold;
+              text-align: center;
+              border-radius: 6px;
+              padding-top: 5px;
+              margin: 20px auto;
+              cursor: pointer;
+            }
+          }
+        }
+        // .complete {
+        //   background-color: @paleRed;
+        //   width: 224px;
+        //   height: 52px;
+        //   color: white;
+        //   font-size: 20px;
+        //   border-radius: 6px;
+        //   display: block;
+        //   font-weight: bold;
+        //   margin: 30px auto;
+        // }
+        .remind {
+          padding: 30px 40px;
+          .title {
+            color: @paleRed;
+            font-size: 30px;
+          }
+          .item {
+            margin-top: 15px;
+            color: @fontColor666;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .guessLikeWrap {
+    width: 1183px;
+    margin: 65px auto;
+    .guessLike {
+      width: 1173px;
+      margin: 0 0 0 auto;
+    }
+  }
+}

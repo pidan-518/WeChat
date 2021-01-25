@@ -1,0 +1,93 @@
+@import "./global.less";
+
+.at-tabs__item--active {
+  color: @commonColor !important;
+}
+
+.at-tabs__item-underline {
+  background-color: @commonColor !important;
+}
+
+body {
+  font-family: yahei;
+  color: black;
+  letter-spacing: 1px;
+}
+
+page {
+  font-size: 28px;
+  background-color: #f5f5f5;
+  margin-bottom: 200px;
+  font-family: yahei;
+  width: 750px;
+}
+
+view,
+Text,
+form,
+button,
+input,
+textarea {
+  box-sizing: border-box;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  line-height: unset;
+  font-size: unset;
+  padding: 0;
+}
+
+button::after {
+  border: none;
+  content: none;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  border: solid 1px #aaa;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+select {
+  appearance: none;
+}
+
+.selectWrap {
+  position: relative;
+  width: fit-content;
+}
+
+.selectArrow {
+  position: absolute;
+  top: 6px;
+  right: 15px;
+}
+
+.currency::before {
+  content: "￥";
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.navigator-hover {
+  background-color: unset;
+}

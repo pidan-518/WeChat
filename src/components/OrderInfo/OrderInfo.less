@@ -1,0 +1,125 @@
+@import '../../common/global.less';
+
+.orderInfo {
+  color: black;
+  width: 750px;
+
+  .proInfo {
+    width: unset;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    // margin: 0 30px;
+    // border-radius: 10px;
+
+    image {
+      width: 220px;
+      height: 220px;
+      margin-right: 20px;
+    }
+    .right {
+      width: 450px;
+      text-align: right;
+      .line {
+        margin-top: 13px;
+      }
+      .proName {
+        text-align: left;
+      }
+      .type {
+        font-size: 24px;
+        color: @fontColor666;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        width: fit-content;
+        padding: 3px 30px;
+        margin: 15px 0 0 0;
+        text-align: left;
+      }
+      .amount {
+        font-size: 24px;
+        color: @fontColor666;
+        // text-align: right;
+        margin-top: 30px;
+      }
+      .price {
+        color: @commonColor;
+        font-size: 30px;
+        font-weight: bold;
+        // text-align: right;
+      }
+    }
+  }
+  .order {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 30px 50px;
+
+    .line {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+
+      .prop {
+        font-weight: bold;
+      }
+    }
+    .check {
+      background-color: @commonColor;
+      color: white;
+      border-radius: 20px;
+      padding: 20px 0px;
+      font-size: 30px;
+      font-weight: bold;
+      margin: 40px 0 20px;
+    }
+  }
+
+  // display: block;
+  // // border: 1px solid #ccc;
+  // border-radius: 4px;
+  // // width: 263px;
+  // .title {
+  //   color: @paleRed;
+  //   font-size: 16px;
+  //   text-align: center;
+  //   padding: 10px 0;
+  //   border-bottom: 1px solid #ccc;
+  // }
+  //   image {
+  //   display: block;
+  //   margin: 10px auto 0;
+  //   width: 100px;
+  //   height: 100px;
+  //   border: 1px solid @paleRed;
+  //   border-radius: 5px;
+  // }
+  // .info {
+  //   padding: 0 20px;
+  //   .prop {
+  //     width: 80px;
+  //     display: inline-block;
+  //     margin-top: 3px;
+  //     font-weight: bold;
+  //     color: #333;
+  //   }
+  //   .value {
+  //     word-wrap: break-word;
+  //     overflow: hidden;
+  //   }
+  // }
+  // .check {
+  //   color: white;
+  //   background-color: @paleRed;
+  //   width: 150px;
+  //   height: 35px;
+  //   display: block;
+  //   font-size: 16px;
+  //   font-weight: bold;
+  //   text-align: center;
+  //   border-radius: 6px;
+  //   padding-top: 5px;
+  //   margin: 20px auto;
+  //   cursor: pointer;
+  // }
+}

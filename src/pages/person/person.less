@@ -1,0 +1,227 @@
+@import "../../common/global.less";
+page {
+  background-color: #fff;
+}
+#person-head {
+  position: relative;
+  z-index: 8;
+
+  .person-nav {
+    text-align: center;
+    line-height: 90px;
+    color: #fff;
+  }
+}
+
+#user-info {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+
+  .user-info-bg {
+    .setSize(900px, 500px);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: -76px;
+    background-color: @commonColor;
+    overflow: hidden;
+
+    Image {
+      position: absolute;
+      // top: -50px;
+      right: 76px;
+      .setSize(750px, 750px);
+    }
+  }
+
+  .user-info-box {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    Image {
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      .setSize(182px, 182px);
+    }
+
+    .user-name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #Fff;
+      font-weight: 700;
+      margin-top: 20px;
+
+      Image {
+        border: none;
+        .setSize(38px, 38px);
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .login-btn {
+    width: 250px;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    Button {
+      height: 80px;
+      line-height: 80px;
+      border: 1px solid @commonColor;
+      color: @commonColor;
+      font-size: 30px;
+    }
+  }
+}
+
+#person {
+  width: 100%;
+  padding: 0px 32px 0px 32px;
+  position: absolute;
+  z-index: -1;
+  top: 482px;
+  margin-bottom: 20px;
+
+  .person-adminwrap {
+    padding: 50px 30px;
+    box-shadow: 0 6px 20px #eeeeee;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+    .adminItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #303030;
+      font-size: 26px;
+      padding: 0px 50px;
+
+      Image {
+        .setSize(60px, 60px);
+      }
+
+      Text {
+        margin-top: 10px;
+      }
+    }
+
+    .adminItem:nth-child(2),.adminItem:nth-child(3) {
+      border-left: 1px solid #E5E5E5;
+    }
+  }
+
+  .person-menu {
+    box-shadow: 0 6px 20px #eeeeee;
+    background-color: #fff;
+    margin-top: 30px;
+    // padding: 30px 0px;
+    border-radius: 10px;
+
+    .menu-item {
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #E5E5E5;
+
+      .menu-label {
+        display: flex;
+        align-items: center;
+
+        Image {
+          .setSize(40px, 40px);
+          margin-right: 40px;
+        }
+
+        Text {
+          color: #303030;
+          font-size: 30px;
+        }
+      }
+
+      Image {
+        .setSize(40px, 40px);
+      }
+    }
+  }
+}
+
+#guess-wrap {
+  position: absolute;
+  top: 1450px;
+  left: 0;
+  right: 0;
+
+  .guess-title {
+    margin: 0 auto;
+    text-align: center;
+
+    Image {
+      .setSize(462px, 24px);
+    }
+  }
+
+  .guess-list {
+    .setGrid(2, 2, 342px, 476px);
+    row-gap: 24px;
+    padding: 22px;
+
+    .list-item {
+      .setSize(342px, 476px);
+      background-color: #fff;
+      box-shadow: 0px 6px 20px #eeeeee;
+      text-align: center;
+
+      Image {
+        display: block;
+        margin: 0 auto;
+        width: 302px;
+        height: 302px;
+      }
+
+      .good-detail {
+        padding: 20px;
+        overflow: hidden;
+
+        .good-name {
+          width: 260px;
+          line-height: 1.1;
+          height: 58px;
+          font-size: 26px;
+        }
+
+        .good-price {
+          color: @commonColor;
+          font-weight: 300;
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .good-price-txt {
+            text-decoration: line-through;
+            color: #8b8b8b;
+            margin-left: 10px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

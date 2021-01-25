@@ -1,0 +1,68 @@
+@import "../../common/global.less";
+
+.orderPaySuccess {
+  // font-size: 24px;
+  .ct-orderPaySuccess {
+    // width: 1173px;
+    margin: 50px auto;
+    .success {
+      // box-shadow: @shadowOne;
+      // height: 500px;
+      border-radius: 5px;
+      text-align: center;
+      overflow: hidden;
+      margin-top: 50px;
+      .main {
+        margin-top: 150px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        image {
+          height: 80px;
+          width: 80px;
+          position: relative;
+        }
+        .right {
+          margin-left: 30px;
+          .title {
+            font-size: 32px;
+            color: #00c16d;
+            font-weight: bold;
+          }
+          .back {
+            color: @fontColor666;
+            margin-top: 6px;
+            position: relative;
+            .time {
+              font-size: 30px;
+              color: @darkRedM;
+            }
+          }
+        }
+      }
+      .action {
+        margin-top: 180px;
+        button {
+          font-size: 30px;
+          font-weight: bold;
+          border-radius: 50px;
+          width: 85%;
+          padding: 28px 0;
+          background-color: @darkRedM;
+          color: white;
+          margin-top: 50px;
+        }
+        // .cart {
+        //   // border: 1px solid @darkRedM;
+        //   // color: @darkRedM;
+        //   // margin-right: 100px;
+        // }
+        .home {
+          background-color: @darkRedM;
+          color: white;
+        }
+      }
+    }
+  }
+}

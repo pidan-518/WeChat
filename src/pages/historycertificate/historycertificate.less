@@ -1,0 +1,117 @@
+@import '../../common/global.less';
+page {
+  margin-bottom: 0;
+}
+
+#history-certificate {
+  padding-top: 40px;
+
+  .certificate-title {
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 23px;
+  }
+
+  .certificate-list {
+    margin-top: 25px;
+    padding: 0px 23px;
+
+    .certificate-item {
+      position: relative;
+      display: flex;
+      .setSize(100%, 282px);
+      background-size: 100% 100%;
+      margin-bottom: 54px;
+      padding: 20px 0px;
+
+      .item-left {
+        .setSize(230px, 100%);
+        text-align: center;
+
+        .coupon-price {
+          position: relative;
+          top: 50%;
+          left: 0;
+          right: 0;
+          transform: translateY(-50%);
+          color: #fff;
+
+          .price-symbol {
+            font-size: 48px;
+          }
+
+          .price-text {
+            font-size: 72px;
+          }
+
+          /* .price-rule {
+            
+          } */
+        }
+      }
+
+      .item-right {
+        font-size: 24px;
+        flex: 1;
+        padding-left: 40px;
+
+        .coupon-text {
+          text-align: right;
+          color: #fff;
+          padding-right: 22px;
+        }
+
+        .rule-box {
+          margin-top: 30px;
+          height: 130px;
+
+          .rule-text {
+            margin-bottom: 10px;
+          }
+        }
+
+        .line {
+          border: 2px dashed #4f4f4f;
+          width: 404px;
+          position: relative;
+          right: 20px;
+        }
+
+        .receive-btn {
+          margin-top: 10px;
+
+          .btn {
+            margin-right: 44px;
+            .setSize(130px, 48px);
+            border-radius: 24px;
+            line-height: 48px;
+            color: #fff;
+          }
+        }
+      }
+
+      .item-rule {
+        margin-top: 10px;
+        color: #fff;
+        font-size: 22px;
+      }
+
+      .use-icon {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+
+        image {
+          .setSize(134px, 134px);
+        }
+      }
+    }
+  }
+
+  .certificate-footer {
+    padding-bottom: 30px;
+    font-size: 28px;
+    text-align: center;
+  }
+}

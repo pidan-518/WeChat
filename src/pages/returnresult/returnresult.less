@@ -1,0 +1,187 @@
+@import "../../common/global.less";
+
+.returnResult {
+  width: 750px;
+  .ct-wrap {
+    width: 750px;
+    display: flex;
+    .ct-returnResult {
+      // width: 1014px;
+      margin: 2px 0 20px auto;
+      .applyWrap {
+        box-shadow: @shadowOne;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-top: 30px;
+        .returnApplyStage {
+          margin: 50px auto;
+        }
+        .actionAInfo {
+          // display: flex;
+          justify-content: space-between;
+          // padding: 30px 40px 30px 20px;
+          color: @fontColor666;
+          .left {
+            width: 675px;
+            .result {
+              margin-top: -20px;
+              margin-bottom: 20px;
+              // padding: 10px 30px;
+            }
+            .moreAction {
+              padding: 10px 20px;
+              .title {
+                font-weight: bold;
+                font-size: 18px;
+                margin-left: 12px;
+              }
+              .action {
+                display: flex;
+                justify-content: center;
+                button {
+                  background-color: #79374E;
+                  width: 160px;
+                  height: 44px;
+                  color: white;
+                  font-size: 18px;
+                  font-weight: bold;
+                  border-radius: 4px;
+                  display: block;
+                  margin: 30px 30px 40px;
+                }
+              }
+              .servicePhone {
+                width: fit-content;
+                margin: 0 auto -20px;
+              }
+            }
+          }
+          .right {
+            display: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 263px;
+            .title {
+              color: @paleRed;
+              font-size: 16px;
+              text-align: center;
+              padding: 10px 0;
+              border-bottom: 1px solid #ccc;
+            }
+             image {
+              display: block;
+              margin: 10px auto 0;
+              width: 100px;
+              height: 100px;
+              border: 1px solid @paleRed;
+              border-radius: 5px;
+            }
+            .info {
+              padding: 0 20px;
+              .prop {
+                width: 80px;
+                display: inline-block;
+                margin-top: 3px;
+                font-weight: bold;
+                color: #333;
+              }
+              .value {
+                word-wrap: break-word;
+                overflow: hidden;
+              }
+            }
+            .check {
+              color: white;
+              background-color: @paleRed;
+              width: 150px;
+              height: 35px;
+              display: block;
+              font-size: 16px;
+              font-weight: bold;
+              text-align: center;
+              border-radius: 6px;
+              padding-top: 5px;
+              margin: 20px auto;
+              cursor: pointer;
+            }
+          }
+        }
+        .remind {
+          padding: 30px 40px;
+          .title {
+            color: @paleRed;
+            font-size: 28px;
+          }
+          .item {
+            margin-top: 15px;
+            display: block;
+            color: @fontColor666;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }     
+  .guessLikeWrap {
+    width: 1183px;
+    margin: 65px auto;    
+    .guessLike {
+      width: 1173px;
+      margin: 0 0 0 auto;
+    }
+  }  
+
+  /* ------- 成功 ------- */
+  .Success {
+    color: red;
+    .title {
+      font-weight: bold;
+      color: black;
+      display: inline-block;
+      font-size: 16px;
+    }
+     image {
+      // margin-left: 30px;
+      height: 30px;
+      width: 30px;
+    }
+    .returnInfo {
+      margin-top: 20px;
+      .prop {
+        width: 100px;
+        display: inline-block;
+        font-weight: bold;
+      }
+      text {
+        margin-top: 20px;
+      }
+    }
+  }
+  /* -------------------- */
+
+  /* ------- 失败 ------- */
+  .Failure {
+    .title {
+      font-weight: bold;
+      color: black;
+      display: inline-block;
+      font-size: 16px;
+    }
+     image {
+      margin-left: 30px;
+    }
+    .failureInfo {
+      margin-top: 20px;
+      .line {
+        margin-top: 15px;
+      }
+      .prop {
+        width: 120px;
+        display: inline-block;
+        font-weight: bold;
+      }
+    }
+  }
+  /* -------------------- */
+
+}

@@ -1,0 +1,82 @@
+@import '../../common/global.less';
+
+.unBindWeChat {
+  .title {
+    font-size: 32px;
+    // background-color: #fff;
+    margin: 70px 30px;
+    width: 100%;
+    display: block;
+    font-weight: bold;
+  }
+
+  .item_list {
+    background-color: #fff;
+    padding: 30px 0;
+
+    .item {
+      padding: 0 30px;
+      margin: 60px 0;
+      display: flex;
+      align-items: flex-end;
+      // background-color: #fff;
+
+      .item_desc {
+        width: 180px;
+      }
+
+      .value {
+        font-size: 26px;
+        width: 500px;
+        display: inline-block;
+        border-color: #ddd;
+        border-radius: 7px;
+      }
+    }
+
+    .imgCode {
+      align-items: flex-end;
+
+      .value {
+        width: 230px;
+      }
+
+      image {
+        width: 200px;
+        height: 60px;
+        // border: solid 1px #ddd;
+        margin-left: 50px;
+      }
+    }
+
+    .phoneCode {
+
+      .value {
+        width: 230px;
+      }
+
+      button {
+        color: white;
+        background-color: @darkRedM;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 7px 30px;
+        margin-left: 50px;
+      }
+      button.disable {
+        background-color: #ddd;
+        color: #888;
+      }
+    }
+  }  
+
+  .submit {
+    color: white;
+    background-color: @darkRedM;
+    width: 670px;
+    font-weight: bold;
+    font-size: 32px;    border-radius: 20px;
+    padding: 20px 0;
+    margin: 110px auto;
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../common/global.less";
+
+.guess-wrap {
+
+  .guess-title {
+    margin: 0 auto;
+    text-align: center;
+
+    Image {
+      .setSize(462px, 24px);
+    }
+  }
+
+  .guess-list {
+    .setGrid(2, 2, 322px, 476px);
+    padding: 20px 30px;
+    margin-bottom: 96px;
+    row-gap: 24px;
+
+    .list-item {
+      .setSize(100%, 100%);
+      background-color: #fff;
+      box-shadow: 0px 6px 20px #eeeeee;
+
+      Image {
+        .setSize(300px, 300px);
+        margin-top: 10px;
+      }
+
+      .good-detail {
+        padding: 20px;
+        overflow: hidden;
+
+        .good-name {
+          font-size: 26px;
+          text-align: center;
+        }
+
+        .good-price {
+          color: @commonColor;
+          font-weight: 300;
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+
+          .good-price-txt {
+            text-decoration: line-through;
+            color: #8b8b8b;
+            margin-left: 10px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

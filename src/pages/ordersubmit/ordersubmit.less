@@ -1,0 +1,514 @@
+@import '../../common/global.less';
+
+.orderSubmit {
+  border-top: 1px solid #ddd;
+  font-size: 24px;
+  padding-bottom: 300px;
+  hr {
+    border-color: #ddd;
+  }
+  .ct-orderSubmit {
+    margin: auto;
+    .receiveInfo {
+      position: relative;
+      view {
+        .prop {
+          font-weight: bold;
+          display: inline-block;
+          width: 100px;
+        }
+      }
+      button {
+        background-color: transparent;
+      }
+      .add,
+      .change {
+        display: block;
+        margin-top: 5px;
+        background-color: #fff;
+        font-size: 30px;
+        height: 130px;
+        font-weight: bold;
+        padding-top: 30px;
+        position: relative;
+        text-align: left;
+        padding-left: 80px;
+        .location {
+          height: 42px;
+          width: calc(46px * 42 / 68);
+          position: relative;
+          right: 30px;
+          top: 10px;
+        }
+        .arrow {
+          width: calc(24px * 30 / 45);
+          height: 30px;
+          display: inline-block;
+          text-align: right;
+          position: absolute;
+          right: 30px;
+          top: 54px;
+        }
+      }
+
+      /* 当前收货地址 */
+      .receiveInfo_show {
+        margin-top: 20px;
+        padding: 30px;
+        background-color: #fafafa;
+
+        .line_desc {
+          width: 150px;
+          display: inline-block;
+          margin: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+    .invoiceInfo {
+      text-align: center;
+      margin: 60px 0;
+    }
+    // .promoCode {
+    //   height: 120px;
+    //   background-color: white;
+    //   display: flex;
+    // align-items: center;
+    // margin-top: 20px;
+
+    //   .content {
+    //     width: 100vw;
+    //     padding: 0 22px;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     .content {
+    //       .text {
+    //         font-size: 30px;
+    //       }
+    //       .promoode {
+    //         background-color: #F5F5F5;
+    //         margin-left: 20px;
+    //         width: 70%;
+    //         margin-left: 15px;
+    //         height: 84px;
+    //         font-size: 28px;
+    //         border: none;
+    //         text-align: center;
+    //         z-index: 0;
+    //       }
+    //     }
+    //   }
+    // }
+    
+    // .prompt {
+    //   padding-left: 18px;
+    //   margin-top: 6px;
+    //   height: 34px;
+    //   width: 100vw;
+    //   .prompt-img {
+    //     height: 34px;
+    //      width: 320px;
+    //   }
+    // }
+
+    .storeList {
+      .proList {
+        margin-top: 20px;
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        thead {
+          // background-color: #ddd;
+          border-bottom: 1px solid #ddd;
+          display: block;
+          padding: 30px 60px;
+          font-weight: bold;
+          tr {
+            height: 50px;
+          }
+        }
+        td,
+        th {
+          text-align: center;
+          width: 120px;
+        }
+        // td {
+        //   height: 130px;
+        // }
+        .itemPro {
+          display: flex;
+          padding: 40px 20px;
+          height: unset;
+        }
+
+        .right {
+          width: 500px;
+          .proInfo {
+            max-height: 68px;
+            overflow: hidden;
+            display: block;
+          }
+          .amount {
+            text-align: left;
+            display: block;
+            margin: 10px;
+            font-size: 20px;
+            color: @commonColor;
+            margin-top: 20px;
+          }
+          .subTotal {
+            display: block;
+            margin-left: 0;
+            text-align: left;
+            padding-left: 10px;
+            font-size: 28px;
+            font-weight: bold;
+            .unit {
+              margin-right: 10px;
+            }
+          }
+          .proStyle {
+            color: #666;
+            display: block;
+            margin-top: 17px;
+            width: 100%;
+            .subType,
+            .type {
+              display: block;
+              text-align: center;
+              margin-top: 7px;
+              border: 1px solid #bbb;
+              color: #666;
+              border-radius: 20px;
+              font-size: 21px;
+              min-width: 150px;
+              width: fit-content;
+            }
+            // .type {
+            //   display: block;
+            // }
+            // width: 200rpx;
+            text-align: center;
+            .amount {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              width: 100%;
+              button {
+                width: 40rpx;
+                height: 40rpx;
+                background-color: @commonColor;
+                border-radius: 5rpx;
+                color: white;
+                // font-size: 18rpx;
+                font-weight: bold;
+                padding: 18px 10rpx;
+                margin: 0;
+                .line {
+                  width: 20rpx;
+                  height: 4rpx;
+                  background-color: white;
+                  display: block;
+                  border-radius: 2rpx;
+                }
+                .trans {
+                  transform: rotate(90deg);
+                  margin-top: -4rpx;
+                }
+              }
+              input {
+                color: @fontColor666;
+                width: 80rpx;
+                height: 37px;
+                margin: 0 7rpx;
+                border-color: @commonColor;
+                border-radius: 2rpx;
+                text-align: center;
+                padding: 0;
+                position: relative;
+                bottom: 0rpx;
+              }
+              input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+              }
+            }
+            p {
+              margin-top: 5rpx;
+            }
+          }
+        }
+
+        .production {
+          align-items: center;
+          justify-content: center;
+          width: 250px;
+          image {
+            width: 180px;
+            height: 180px;
+            // border: 1px solid #ff5d8ccc;
+            border-radius: 20px;
+          }
+          p {
+            display: inline-block;
+            width: 150px;
+            word-wrap: break-word;
+            text-align: left;
+            margin-top: 0;
+            margin-left: 20px;
+            color: black;
+            max-height: 75px;
+          }
+          p:hover {
+            color: coral;
+          }
+        }
+        .platformPrice {
+          .currency {
+            display: block;
+          }
+          .priceOrigin {
+            font-size: 12px;
+            color: #666;
+            text-decoration: line-through;
+            margin-bottom: 5px;
+          }
+        }
+        .amount {
+          p {
+            color: #777;
+            margin-top: 5px;
+          }
+          // .amount-amount {
+          //   // font-size: 16px;
+          // }
+        }
+        tbody {
+          .subTotal {
+            color: @commonColor;
+          }
+        }
+      }
+    }
+    .preferential {
+      // display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      .addPref {
+        // margin-left: 70px;
+        display: flex;
+        height: 100px;
+        background-color: #fff;
+        font-size: 30px;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        // padding-top: 30px;
+        color: @fontColor666;
+        justify-content: space-between;
+        align-items: center;
+        .description {
+          // margin-left: 20px;
+          display: inline-block;
+        }
+        .remind {
+          font-size: 24px;
+          color: #777;
+          margin-left: 10px;
+        }
+      }
+      .info {
+        color: #666;
+        margin-right: 20px;
+        text-align: right;
+        padding: 30px 50px 1px;
+        background-color: #fff;
+        margin: 20px 0;
+        .line {
+          margin-bottom: 30px;
+          display: flex;
+          justify-content: space-between;
+        }
+        span {
+          display: inline-block;
+          width: 100px;
+        }
+        .value {
+          font-size: 24px;
+        }
+        .total {
+          .value {
+            color: @commonColor;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 30px;
+            width: fit-content;
+            min-width: 100px;
+          }
+        }
+        .freightCharges {
+          .value {
+            color: black;
+            font-size: 24px;
+          }
+        }
+        .taxFee {
+          .value {
+            color: black;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    hr {
+      border-width: 2px;
+    }
+    .action {
+      // margin-top: 25px;
+      // display: flex;
+      // justify-content: space-between;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-shadow: @shadowOne;
+      .left {
+        margin-left: 70px;
+        textarea {
+          padding: 15px 20px;
+          border-color: #ddd;
+          margin-top: 10px;
+          border-width: 2px;
+        }
+        textarea::-webkit-input-placeholder {
+          color: #aaa;
+        }
+      }
+      .right {
+        // margin-right: 20px;
+        // text-align: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 50px;
+        .finalAmount {
+          .prop {
+            margin-right: 20px;
+            // font-size: 16px;
+            color: @fontColor666;
+          }
+          .value {
+            font-size: 34px;
+            letter-spacing: 3px;
+            color: @commonColor;
+            font-weight: bold;
+          }
+        }
+        button {
+          background-color: @commonColor;
+          width: 248px;
+          height: 75px;
+          border-radius: 7px;
+          display: block;
+          // margin: 40px 0 0 auto;
+          color: white;
+          font-size: 30px;
+          font-weight: bold;
+          margin: 0;
+          padding-top: 15px;
+        }
+        .remind {
+          color: @commonColor;
+          margin-top: 15px;
+          img {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  /* 遮罩 */
+  .mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+  }
+
+  /* 实名认证 */
+  .realName {
+    position: fixed;
+    background-color: #fff;
+    z-index: 21;
+    box-shadow: @commonColor;
+    top: 240px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    border-radius: 14px;
+    overflow: hidden;
+    .title {
+      display: block;
+      font-weight: bold;
+      text-align: center;
+      height: 80px;
+      padding-top: 18px;
+      border-bottom: 1px solid #ddd;
+      font-size: 30px;
+      background-color: @commonColor;
+      color: white;
+    }
+    .content {
+      padding: 0 30px 0;
+      width: 540px;
+      .desc {
+        padding: 20px 0 10px;
+        white-space: pre-line;
+        font-size: 24px;
+        color: #333;
+      }
+      .item {
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 28px;
+      }
+      .item_isAccountRealAuth {
+        margin-top: 30px;
+      }
+      .value {
+        margin: 10px 0 0 -2px;
+      }
+      .value_realName {
+        color: #999;
+        background-color: #eee;
+      }
+    }
+    .action {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      border-top: 1px solid #ddd;
+      button {
+        width: 130px;
+        padding: 7px 0;
+        background-color: @commonColor;
+        border-radius: 6px;
+        margin: 20px 35px 20px;
+        display: block;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .cancel {
+        background-color: #fff;
+        color: @commonColor;
+        border: 1px solid @commonColor;
+      }
+    }
+  }
+}

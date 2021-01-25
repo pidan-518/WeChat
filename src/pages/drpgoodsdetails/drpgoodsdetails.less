@@ -1,0 +1,241 @@
+@import "../../common/global.less";
+
+.at-float-layout .layout-body__content {
+  max-height: unset;
+}
+
+.drpGoodsDetails {
+  /* 默认样式处理 */
+  button {
+    margin: unset;
+  }
+  /* 自定 */
+  font-size: 28px;
+
+  .img {
+    width: 750px;
+    max-height: 750px;
+  }
+  .text_wrap {
+    padding: 20px;
+    overflow: hidden;
+    .name {
+      display: block;
+      margin: 20px;
+      width: fit-content;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .introduction {
+      margin: 10px 20px;
+      display: block;
+    }
+  }
+
+  .goods-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 96px;
+    padding: 0px 34px;
+    background-color: #fff;
+    color: #424242;
+    font-size: 30px;
+
+    .good-style-value {
+      display: flex;
+      align-items: center;
+
+      Text {
+        line-height: 1;
+      }
+      image {
+        .setSize(38px, 38px);
+      }
+    }
+  }
+
+  .drp-goods-info {
+    position: relative;
+    display: flex;
+    padding: 0px 22px;
+    margin-bottom: 33px;
+
+    .fork {
+      position: absolute;
+      right: 38px;
+      .setSize(46px, 46px);
+    }
+
+    .goods-img-box {
+      .setSize(204px, 204px);
+
+      .goods-img {
+        border-radius: 4px;
+        .setSize(100%, 100%);
+      }
+    }
+
+    .goods-name-box {
+      width: 352px;
+      margin-left: 20px;
+
+      .goods-name-text {
+        width: 352px;
+        height: 84px;
+        font-size: 32px;
+      }
+
+      .goods-price {
+        margin-top: 22px;
+        font-weight: 700;
+        color: @commonColor;
+
+        .price-symbol {
+          font-size: 28px;
+        }
+
+        .price-text {
+          font-size: 40px;
+        }
+      }
+
+      .goods-stockNum {
+        margin-top: 10px;
+        color: #787878;
+        font-size: 28px;
+      }
+      /* padding-right: 152px; */
+    }
+  }
+
+  // 商品介绍图
+  .goods-info {
+    background-color: #fff;
+    padding: 34px;
+    overflow: hidden;
+    margin-top: 20px;
+
+    .goods-info-title {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .rich-text {
+      overflow: hidden;
+      .setSize(100%, 100%);
+
+      .goodsInfo-img {
+        .setSize(100%, 100%);
+      }
+    }
+  }
+
+  /* 规格框入口 */
+  .spec_ctl_wrap {
+    box-shadow: 0 -5px 20px #ddd;
+    background-color: #fff;
+    padding: 40px 15px 40px;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    .spec_ctl {
+      background-color: @darkRedM;
+      color: white;
+      font-weight: bold;
+      font-size: 34px;
+      padding: 20px 0;
+      width: 650px;
+      border-radius: 30px;
+      margin: auto;
+    }
+  }
+  /* 规格框 */
+  .spec_wrap {
+    /* taro-ui 默认样式处理 */
+    .at-float-layout__container {
+      border-radius: 28px 28px 0px 0px;
+      min-height: 940px;
+      max-height: unset;
+
+      .layout-body {
+        min-height: 940px;
+        max-height: unset;
+        font-size: unset;
+        padding: 20px 0;
+
+        .layout-body__content {
+          min-height: unset;
+        }
+      }
+    }
+    /* 自定样式 */
+    font-size: 28px;
+    /* 规格模块 */
+    .spec_module_list {
+      padding: 10px 20px;
+      .spec_module {
+        .title {
+          font-weight: bold;
+          color: #444;
+          font-size: 30px;
+          padding: 0 20px;
+        }
+
+        .spec_item_list {
+          display: flex;
+          margin: 20px 30px 50px;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+
+          .spec_item {
+            background-color: #f5f5f5;
+            color: #98989e;
+            line-height: 60px;
+            padding: 0px 40px;
+            border-radius: 30px;
+            display: block;
+            margin: 10px 11px;
+            border: 2px solid #e5e5e5;
+          }
+
+          .spec_item.select {
+            line-height: 60px;
+            background-color: #ffdfec;
+            color: @commonColor;
+            border: 2px solid #ed6199 !important;
+          }
+        }
+      }
+    }
+    /* 购买 */
+    .buy_wrap {
+      border-top: 1px solid #ddd;
+      .drpRecommend_warp {
+        margin: 30px auto;
+        width: 650px;
+      }
+      .drpRecommend {
+        padding: 10px 20px;
+        margin-top: 10px;
+        text-align: center;
+        height: fit-content;
+      }
+      .buy {
+        color: white;
+        background-color: @darkRedM;
+        width: 650px;
+        height: 80px;
+        border-radius: 13px;
+        margin: 30px auto 10px;
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 20px;
+      }
+    }
+  }
+}

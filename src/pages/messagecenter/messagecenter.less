@@ -1,0 +1,45 @@
+@import '../../common/global.less';
+page {
+  background-color: #fff;
+  margin-bottom: 0px;
+}
+#message-center {
+  .message-btn {
+    line-height: 90px;
+    text-align: center;
+    background-color: #ff5d8c;
+    color: #fff;
+  }
+
+  .scroll-wrap {
+    overflow: hidden;
+
+    .message-list {
+      .list-item {
+        padding: 38px;
+        border-bottom: 1px solid #f5f5f5;
+        position: relative;
+
+        .item-title {
+          color: #ff5d8c;
+          font-weight: 400;
+          font-size: 34px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .message-sign {
+            // position: absolute;
+            // top: 0;
+            .setSize(44px, 44px);
+          }
+        }
+
+        .item-content {
+          font-size: 28px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

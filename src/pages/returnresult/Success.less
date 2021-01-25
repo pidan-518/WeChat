@@ -1,0 +1,71 @@
+@import "../../common/global.less";
+
+.Success {
+  width: 750px;
+  .top {
+    width: 750px;
+    background-color: @paleRed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 80px;
+    .left {
+      color: white;
+      text-decoration: underline;
+      font-size: 32px;
+      letter-spacing: 7px;
+      display: flex;
+      align-items: center;
+      image {
+        margin-right: 20px;
+      }
+    }
+    .right {
+      width: 200px;
+      height: calc(83px * 200 / 95);
+      margin-left: 130px;
+    }
+  }
+  .title {
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    font-size: 16px;
+  }
+    image {
+    // margin-left: 30px;
+    height: 60px;
+    width: 60px;
+  }
+  .returnInfo {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 50px;
+    .prop {
+      width: 170px;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .left {
+      margin-right: 40px;
+      image {
+        height: 80px;
+        width: calc(75px * 80 / 93);
+      }
+    }
+    .right {
+      margin-top: -20px;
+      .line {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+      }
+      text {
+        margin-top: 20px;
+      }
+    }
+
+  }
+}

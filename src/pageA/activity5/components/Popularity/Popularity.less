@@ -1,0 +1,38 @@
+@import '../../../../common/global.less';
+
+.popularity-goods {
+  .setSize(100%, 320px);
+  position: relative;
+  margin-bottom: 10px;
+
+  .popularity-goods-bg {
+    .setSize(100%, 100%);
+    position: relative;
+    right: 2px;
+  }
+
+  .goods-item-wrap {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    right: 0;
+    width: 670px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .goods-item {
+      text-align: center;
+      .setSize(186px, 218px);
+      background-color: #fff;
+
+      .goods-img {
+        .setSize(100%, 100%);
+      }
+    }
+
+    .goods-item:nth-child(2) {
+      .setSize(284px, 218px);
+    }
+  }
+}

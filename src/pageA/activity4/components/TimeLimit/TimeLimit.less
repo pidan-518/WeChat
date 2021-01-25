@@ -1,0 +1,42 @@
+@import '../../../../common/global.less';
+page {
+  margin-bottom: 0 !important;
+}
+.time-limit-goods-wrap {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  height: 218px;
+  margin-top: 24px;
+  border-radius: 6px;
+
+  .wrap-left {
+    Image {
+      .setSize(306px, 100%);
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+  }
+
+  .wrap-right {
+    flex: 1;
+    width: 206px;
+    padding: 0px 0px 0px 20px;
+
+    .right-swiper-wrap {
+      .setSize(100%, 100%);
+      overflow: hidden;
+
+      .swiper-goods-item {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        Image {
+          .setSize(120px, 120px);
+          border-radius: 50%;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

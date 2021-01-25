@@ -1,0 +1,145 @@
+@import "../../common/global.less";
+page {
+  background-color: #f5f5f5;
+  margin-bottom: 0;
+}
+
+#category {
+  .category-head {
+    padding: 0px 210px 0px 22px;
+    position: sticky;
+    top: 0;
+    z-index: 55;
+    background-color: #fff;
+    /* border-bottom: 2px solid #ccc; */
+
+    .nav--box {
+      height: 90px;
+      display: flex;
+      align-items: center;
+
+      .nav-input {
+        display: flex;
+        align-items: center;
+        background-color: #ededed;
+        padding: 0px 15px;
+        flex: 1;
+        border-radius: 32px;
+
+        image {
+          .setSize(40px, 40px);
+        }
+
+        input {
+          width: 330px;
+          border: none;
+          font-size: 28px;
+          line-height: 64px;
+          height: 64px;
+        }
+      }
+    }
+  }
+
+  .category-content {
+    display: flex;
+
+    .left-scroll {
+      width: 200px;
+
+      .left-item {
+        text-align: center;
+        width: 200px;
+        padding: 20px 0px;
+        border-radius: 0px 10px 10px 0px;
+        font-size: 28px;
+      }
+
+      .left-item-ac {
+        background-color: #fff;
+        color: @commonColor;
+        text-align: center;
+        padding: 20px 0px;
+        /* font-size: 32px; */
+        font-weight: 700;
+        position: relative;
+      }
+
+      .left-item-ac::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        content: "";
+        height: 39px;
+        width: 6px;
+        background-color: @commonColor;
+      }
+    }
+
+    .right-scroll {
+      flex: 2;
+      background-color: #fff;
+
+      .right-content {
+        padding: 26px;
+
+        .right-wrap {
+          .setSize(494px, 272px);
+
+          .swiper-wrap {
+            .setSize(100%, 100%);
+
+            .swiper-item-img {
+              .setSize(100%, 100%);
+              border-radius: 20px;
+            }
+          }
+        }
+
+        .right-title {
+          text-align: center;
+          margin-top: 34px;
+
+          .title-img {
+            display: inline-block;
+            margin: 0 auto;
+            .setSize(246px, 38px);
+            background-image: url(https://iconmall-developer.oss-cn-beijing.aliyuncs.com/png/small/category/right-title.png);
+            background-size: 100% 100%;
+            font-weight: 800;
+          }
+        }
+
+        .right-list {
+          margin-top: 34px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+
+          .list-item {
+            width: 138px;
+            margin-left: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+
+            .item-img {
+              display: inline-block;
+              margin: 0 auto;
+              .setSize(102px, 102px);
+
+              image {
+                border-radius: 50%;
+                .setSize(100%, 100%);
+              }
+            }
+
+            .item-text {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../../../common/global.less';
+
+.goods-swiper-wrap {
+  position: relative;
+  background-color: #fff;
+  height: 661px;
+
+  .goods-status {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 2;
+    .setSize(82px, 90px);
+  }
+
+  .goods-origin {
+    z-index: 2;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    .setSize(60px, 60px);
+  }
+
+  .goods-swiper-pagenumber {
+    .setSize(100px, 50px);
+    line-height: 50px;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 26px;
+    color: #fff;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    text-align: center;
+
+    .current-number {
+      font-size: 32px;
+    }
+  }
+
+  .goods-swiper {
+    height: 100%;
+    text-align: center;
+
+    .goods-img {
+      .setSize(100%, 100%);
+    }
+  }
+}

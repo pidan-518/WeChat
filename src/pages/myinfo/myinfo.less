@@ -1,0 +1,82 @@
+@import '../../common/global.less';
+page {
+  .setSize(100%, 100%);
+  background-color: #f5f5f5;
+  margin-bottom: 0;
+}
+#my-info {
+  border-top: 1px solid #f5f5f5;
+  background: #fff;
+
+  #my-head {
+    padding: 30px 0px;
+    text-align: center;
+    margin: 0 auto;
+
+    .my-head-img {
+      .setSize(220px, 220px);
+      border-radius: 50%;
+      border: 2px solid #ccc;
+    }
+
+    .my-head-txt {
+      font-size: 28px;
+      color: #ff5d8c;
+      margin-top: 10px;
+    }
+  }
+
+  #my-info-form {
+    .my-info-item {
+      display: flex;
+      padding: 30px 30px;
+      border-top: 1px solid #f5f5f5;
+
+      .item-label {
+        color: #303030;
+        flex: 1;
+      }
+
+      .item-value {
+        flex: 2;
+
+        input {
+          border: none;
+        }
+      }
+    }
+
+    .bindWeChat,
+    .unbindWeChat {
+      text-align: center;
+      display: block;
+      border-top: 15px solid #f5f5f5;
+      font-weight: bold;
+    }
+
+    .form-submit-btn {
+      border-top: 1px solid #f5f5f5;
+      padding: 60px 40px 80px 40px;
+
+      button {
+        flex: 1;
+        line-height: 90px;
+        font-size: 28px;
+        color: #fff;
+        border-radius: 0;
+        background-color: #ff5d8c;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+
+      .modify-password {
+        background-color: #ccc;
+        color: #000;
+      }
+
+      .sign-out-btn {
+        background-color: #ff4d4f;
+      }
+    }
+  }
+}

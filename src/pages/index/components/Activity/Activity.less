@@ -1,0 +1,47 @@
+@import "../../../../common/global.less";
+
+view,
+Text {
+  box-sizing: border-box;
+}
+
+.navigator-hover {
+  background-color: unset;
+}
+
+.activity {
+  margin-top: 20px;
+
+  .activity-coupon-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrap-left {
+    .setSize(342px, 468px);
+
+    .left-image {
+      border-radius: 12px;
+      .setSize(100%, 100%);
+    }
+  }
+
+  .wrap-right {
+    .right-activity {
+      .setSize(352px, 228px);
+
+      .right-activity-image {
+        border-radius: 12px;
+        .setSize(100%, 100%);
+      }
+    }
+
+    .right-activity:nth-last-child(1) {
+      margin-top: 14px;
+    }
+  }
+}
+
+navigator {
+  .setSize(100%, 100%);
+}

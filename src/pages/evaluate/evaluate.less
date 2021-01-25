@@ -1,0 +1,117 @@
+@import '../../common/global.less';
+page {
+  margin-bottom: 0;
+}
+#evaluate {
+  .scroll-wrap {
+    overflow: hidden;
+    background-color: #f5f5f5;
+
+    .evaluate-list {
+      padding: 28px;
+
+      .list-item {
+        background-color: #fff;
+        border-radius: 27px;
+        margin-bottom: 30px;
+
+        .item-head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 30px;
+          border-bottom: 1px solid #f5f5f5;
+
+          .shop-name {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #303030;
+
+            image {
+              .setSize(38px, 38px);
+              margin-left: 20px;
+            }
+          }
+
+          .order-status {
+            color: @commonColor;
+            font-size: 28px;
+            font-weight: 300;
+          }
+        }
+
+        .item-content {
+          display: flex;
+          padding: 28px;
+
+          image {
+            border-radius: 16px;
+            .setSize(186px, 186px);
+          }
+
+          // navigator {
+          //   flex: 1;
+          // }
+
+          .good-wrap {
+            position: relative;
+            margin-left: 40px;
+            flex: 1;
+
+            .good-info {
+              position: relative;
+              font-size: 28px;
+              color: #303030;
+              font-size: 26px;
+
+              .good-spec {
+                display: inline-block;
+                margin-top: 15px;
+                text-align: center;
+                border: 1px solid #d4d4d4;
+                padding: 0px 15px;
+                border-radius: 30px;
+              }
+            }
+
+            .good-price {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              color: @commonColor;
+              font-weight: 700;
+
+              .price-symbol {
+                font-size: 26px;
+              }
+            }
+          }
+        }
+
+        .list-item-btn {
+          text-align: right;
+          padding: 0px 28px 28px 28px;
+
+          button {
+            margin-right: 0;
+            width: 200px;
+            line-height: 60px;
+            background-color: @commonColor;
+            color: #fff;
+            border-radius: 30px;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  .at-tabs__item--active {
+    color: @commonColor;
+  }
+
+  .at-tabs__item-underline {
+    background-color: @commonColor;
+  }
+}

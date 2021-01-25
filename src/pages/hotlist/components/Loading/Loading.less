@@ -1,0 +1,64 @@
+.section {
+  width: 100%;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  // background: #080915;
+
+  .loader-3 {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .loader-3 .dot {
+    width: 20px;
+    height: 20px;
+    // background: #ff5d8c;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 10px);
+  }
+
+  .loader-3 .dot1 {
+    left: 0px;
+    -webkit-animation: dot-jump 0.5s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+    animation: dot-jump 0.5s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+  }
+
+  .loader-3 .dot2 {
+    left: 40px;
+    -webkit-animation: dot-jump 0.5s 0.2s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+    animation: dot-jump 0.5s 0.2s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+  }
+
+  .loader-3 .dot3 {
+    left: 80px;
+    -webkit-animation: dot-jump 0.5s 0.4s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+    animation: dot-jump 0.5s 0.4s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+  }
+
+  @-webkit-keyframes dot-jump {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes dot-jump {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+}

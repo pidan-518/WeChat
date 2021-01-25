@@ -1,0 +1,173 @@
+.ant-spin-dot-item {
+  background-color: #ff5d8c;
+}
+.ant-spin {
+  color: #ff5d8c;
+}
+#returnApply #ct-wrap {
+  width: 1183px;
+  margin: 25px auto;
+  display: flex;
+}
+#returnApply #ct-wrap #ct-returnApply {
+  width: 1014px;
+  margin: 2px 0 20px auto;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap #returnApplyStage {
+  margin: 50px auto;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .actionAInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  color: #666;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .actionAInfo .left {
+  width: 600px;
+  position: relative;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .actionAInfo .left .line {
+  margin-bottom: 40px;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .actionAInfo .left .star {
+  position: absolute;
+}
+#returnApply
+  #ct-wrap
+  #ct-returnApply
+  #applyWrap
+  .actionAInfo
+  .left
+  .ant-form-item-label {
+  margin-right: 10px;
+}
+#returnApply
+  #ct-wrap
+  #ct-returnApply
+  #applyWrap
+  .actionAInfo
+  .left
+  .ant-upload-list-picture-card-container {
+  width: 118px;
+  height: 118px;
+}
+#returnApply
+  #ct-wrap
+  #ct-returnApply
+  #applyWrap
+  .actionAInfo
+  .left
+  .ant-upload-list-picture-card-container
+  .ant-upload-list-item-list-type-picture-card {
+  width: 100%;
+  height: 100%;
+}
+#returnApply
+  #ct-wrap
+  #ct-returnApply
+  #applyWrap
+  .actionAInfo
+  .left
+  .ant-upload {
+  position: relative;
+}
+#returnApply
+  #ct-wrap
+  #ct-returnApply
+  #applyWrap
+  .actionAInfo
+  .left
+  .ant-upload
+  .remind {
+  font-size: 12px;
+  padding: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  color: #888;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .actionAInfo .right {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 263px;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .actionAInfo .right .title {
+  color: #ff5d8c;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .actionAInfo .right img {
+  display: block;
+  margin: 10px auto 10px;
+  max-width: 180px;
+  max-height: 180px;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .actionAInfo .right .info {
+  padding: 0 20px;
+}
+#returnApply
+  #ct-wrap
+  #ct-returnApply
+  #applyWrap
+  .actionAInfo
+  .right
+  .info
+  .prop {
+  width: 80px;
+  display: inline-block;
+  margin-top: 3px;
+  font-weight: bold;
+  color: #333;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .actionAInfo .right a {
+  color: white;
+  background-color: #ff5d8c;
+  width: 150px;
+  height: 35px;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  padding-top: 5px;
+  margin: 20px auto;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .complete {
+  background-color: #ff5d8c;
+  width: 224px;
+  height: 52px;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  display: block;
+  font-weight: bold;
+  margin: 30px auto;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .remind {
+  padding: 30px 40px;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .remind .title {
+  color: #ff5d8c;
+  font-size: 16px;
+}
+#returnApply #ct-wrap #ct-returnApply #applyWrap .remind .item {
+  margin-top: 15px;
+  color: #666;
+}
+#returnApply #guessLikeWrap {
+  width: 1183px;
+  margin: 65px auto;
+}
+#returnApply #guessLikeWrap #guessLike {
+  width: 1173px;
+  margin: 0 0 0 auto;
+}

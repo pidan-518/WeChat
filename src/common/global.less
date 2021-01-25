@@ -1,0 +1,36 @@
+// 变量
+@commonColor: #ff5d8c;
+@shadowSize: 0px 3px 6px #e8e5e9;
+@paleRed: #ff5d8c;
+@darkRed: #b53c65;
+@commonWidth: 1180px;
+@shadowOne: 0 0 6px rgba(0, 0, 0, 0.16);
+@fontColor666: #666;
+@darkRedM: #d5205e; //小程序深红
+@shadowCardM: 6px 6px 6px rgba(117, 117, 117, 0.13); //小程序卡片阴影
+
+// 尺寸
+.setSize(@width, @height ) {
+  width: @width;
+  height: @height;
+}
+
+// 字体超出显示省略号
+.setFonthidden(@num) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @num;
+  overflow: hidden;
+}
+
+// grid布局
+.setGrid(@columnsNum, @rowsNum, @width, @height) {
+  display: grid;
+  grid-template-columns: repeat(@columnsNum, @width);
+  grid-template-rows: repeat(@rowsNum, @height);
+  row-gap: 7px;
+  column-gap: 7px;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}

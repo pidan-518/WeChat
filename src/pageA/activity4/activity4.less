@@ -1,0 +1,97 @@
+@import '../../common/global.less';
+
+page {
+  background-color: #F5F5F5 !important;
+  margin-bottom: 0 !important;
+}
+
+#activity {
+  background-color: #C48FFF;
+
+  .activity-banner {
+    Image {
+      .setSize(100%, 358px);
+    }
+  }
+
+  .time-limit {
+    margin-top: 36px;
+    padding: 0px 16px;
+  }
+
+  .shop-logo-wrap {
+    &:extend(#activity .time-limit);
+
+    .shop-logo-list {
+      margin-top: 23px;
+      .setGrid(4, 2, 176px, 176px);
+      row-gap: 4px;
+      column-gap: 4px;
+
+      .shop-logo-img {
+        .setSize(100%, 100%);
+
+        Image {
+          background-color: #fff;
+          .setSize(100%, 100%);
+        }
+      }
+    }
+  }
+
+  .detailed-wrap {
+    &:extend(#activity .time-limit);
+  }
+
+  .barnd-spec {
+    &:extend(#activity .time-limit);
+
+    .barnd-goods-list {
+      .setGrid(2, auto-fill, 352px, auto);
+      row-gap: 16px;
+      padding: 20px 0px;
+
+      .list-item {
+        width: 352px;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.17);
+        border-radius: 10px;
+        background-color: #fff;
+        text-align: center;
+
+        .item-good-img {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          .setSize(300px, 300px);
+        }
+
+        .item-good-name {
+          height: 64px;
+          padding: 0px 20px;
+          font-size: 24px;
+        }
+
+        .good-price {
+          color: @commonColor;
+          font-weight: 300;
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .good-price-txt {
+            text-decoration: line-through;
+            color: #8b8b8b;
+            margin-left: 10px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .activity-title {
+    Image {
+      .setSize(497px, 55px);
+    }
+  }
+}
